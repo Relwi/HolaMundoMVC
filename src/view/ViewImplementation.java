@@ -7,7 +7,7 @@ package view;
 
 /**
  * View implementation to show greeting in a text type UI.
- * @author iker
+ * @author aketza
  */
 public class ViewImplementation implements View {
     /**

@@ -7,7 +7,7 @@ package view;
 
 /**
  * Contain view methods for being used by a controller.
- * @author iker
+ * @author aketza
  */
 public interface View {
     /**
