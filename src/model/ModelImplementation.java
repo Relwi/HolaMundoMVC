@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package model;
-
+import java.util.Scanner;
 /**
  *
  * @author iker
@@ -15,6 +15,10 @@ public class ModelImplementation implements Model {
      * @return Return the message.
      */
     public String getGreeting(){
-        return "Adios";
+        String greeting = null;
+        System.out.println("Introduce el saludo: ");
+        Scanner greetingScanner = new Scanner(System.in);
+        greeting = greetingScanner.nextLine();
+        return greeting;
     }
 }
