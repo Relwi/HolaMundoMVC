@@ -5,6 +5,12 @@
  */
 package main;
 
+import model.ModelFactory;
+import view.ViewFactory;
+import control.Controller;
+import view.View;
+import model.Model;
+
 /**
  *
  * @author 2dam
@@ -15,7 +21,12 @@ public class Application {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+        ModelFactory modelFactory = new ModelFactory();
+        ViewFactory viewFactory = new ViewFactory();
+        Model model = modelFactory.getModel();
+        View view = viewFactory.getView();
+        
+        Controller controller = new Controller(view, model);        
+        controller.run();
+    }    
 }

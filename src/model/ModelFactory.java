@@ -7,14 +7,10 @@ package model;
 
 /**
  *
- * @author iker
+ * @author 2dam
  */
-public class ModelImplementation implements Model {
-    /**
-     * 
-     * @return Return the message.
-     */
-    public String getGreeting(){
-        return "Adios";
+public class ModelFactory {
+    public Model getModel(){
+        return new ModelImplementation();
     }
 }

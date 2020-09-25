@@ -10,8 +10,8 @@ package view;
  * @author aketza
  */
 public class ViewFactory {
-    
-    public View getView(){
+
+    public View getView() {
         return new ViewImplementation();
     }
 }

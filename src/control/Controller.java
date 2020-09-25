@@ -13,7 +13,15 @@ import view.View;
  * @author iker
  */
 public class Controller {
-    public void run(View view, Model model){
-        
+    private View view;
+    private Model model;
+    
+    public Controller(View view, Model model) {
+        this.view = view;
+        this.model = model;
+    }
+    
+    public void run(){
+        view.showGreeting(model.getGreeting());
     }
 }
