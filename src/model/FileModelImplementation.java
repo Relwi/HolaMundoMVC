@@ -5,15 +5,18 @@
  */
 package model;
 
+import java.util.ResourceBundle;
+
+
 /**
  *
  * @author Aketza
  */
-public class FileModelImplementation {
-    
+public class FileModelImplementation implements Model {
+    private ResourceBundle rb = ResourceBundle.getBundle("config.config");
     public String getGreeting(){
         String greeting = null;
-        
+        greeting = rb.getString("text");
         return greeting;
     }
     
