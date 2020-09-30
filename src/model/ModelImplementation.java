@@ -14,6 +14,7 @@ public class ModelImplementation implements Model {
      * 
      * @return Return the message.
      */
+    @Override
     public String getGreeting(){
         String greeting = null;
         System.out.println("Introduce el saludo: ");

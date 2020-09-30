@@ -12,8 +12,10 @@ import java.util.ResourceBundle;
  *
  * @author Aketza
  */
+
 public class FileModelImplementation implements Model {
     private ResourceBundle rb = ResourceBundle.getBundle("config.config");
+    @Override
     public String getGreeting(){
         String greeting = null;
         greeting = rb.getString("text");
