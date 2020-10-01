@@ -7,7 +7,7 @@ package model;
 
 /**
  *
- * @author 2dam
+ * @author aketza
  */
 public class ModelFactory {
     public Model getModel(){

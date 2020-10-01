@@ -12,6 +12,6 @@ package view;
 public class ViewFactory {
 
     public View getView() {
-        return new ViewImplementation();
+        return new SwingViewImplementation();
     }
 }
