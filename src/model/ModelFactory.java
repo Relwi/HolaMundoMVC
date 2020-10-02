@@ -4,13 +4,30 @@
  * and open the template in the editor.
  */
 package model;
-
+import util.Utilidades;
 /**
  *
  * @author 2dam
  */
 public class ModelFactory {
     public Model getModel(){
-        return new ServerModelImplementation();
+        int type = 0;
+        
+        do {
+            System.out.println("Introduce un modelo: 1-Fichero 2-DB");
+            type = Utilidades.leerInt();
+            switch (type){
+                case 1:
+                    return new FileModelImplementation();
+                case 2: 
+                    return new ServerModelImplementation();
+                default:
+                    System.out.println("Introduce un modelo valido.");
+                
+            }
+            
+        }while (type !=1 || type!=2);
+        
+        return null;
     }
 }
