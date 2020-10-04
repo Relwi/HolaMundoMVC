@@ -15,9 +15,9 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author 2dam
+ * @author aketza
  */
-public class JavaFXImplementation extends Application implements View {
+public class JavaFXViewImplementation extends Application implements View {
     
     @Override
     public void start(Stage primaryStage) {
@@ -41,16 +41,8 @@ public class JavaFXImplementation extends Application implements View {
         primaryStage.show();
     }
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        launch(args);
-    }
-
     @Override
     public void showGreeting(String greeting) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
+        System.out.println("HOLA");
+    }    
 }

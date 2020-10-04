@@ -13,11 +13,16 @@ import model.Model;
 
 /**
  *
- * @author 2dam
+ * @author iker
  */
 public class Application {
 
     /**
+     * Metodo main, creamos las clases factory del modelo y vista y cogemos los
+     * valores que le hayamos asignado a cada clase, modelo (archivo o DB) y
+     * vista (consola o grafica). Creamos el controlador con las interfaces y
+     * ejecutamos el controller.
+     *
      * @param args the command line arguments
      */
     public static void main(String[] args) {
@@ -25,8 +30,8 @@ public class Application {
         ViewFactory viewFactory = new ViewFactory();
         Model model = modelFactory.getModel();
         View view = viewFactory.getView();
-        
-        Controller controller = new Controller(view, model);        
+
+        Controller controller = new Controller(view, model);
         controller.run();
-    }    
+    }
 }

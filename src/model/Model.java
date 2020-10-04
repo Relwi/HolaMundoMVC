@@ -10,10 +10,11 @@ package model;
  * @author iker
  */
 public interface Model {
+
     /**
-     * 
+     *
      * @return Return the message.
      */
     public String getGreeting();
-    
+
 }

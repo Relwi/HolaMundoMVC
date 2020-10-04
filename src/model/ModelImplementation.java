@@ -4,18 +4,21 @@
  * and open the template in the editor.
  */
 package model;
+
 import java.util.Scanner;
+
 /**
- *
+ * 
  * @author iker
  */
 public class ModelImplementation implements Model {
+
     /**
-     * 
+     *
      * @return Return the message.
      */
     @Override
-    public String getGreeting(){
+    public String getGreeting() {
         String greeting = null;
         System.out.println("Introduce el saludo: ");
         Scanner greetingScanner = new Scanner(System.in);

@@ -28,11 +28,10 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
- 
 /**
  * This example, like all Swing examples, exists in a package:
  * in this case, the "start" package.
- * If you are using an IDE, such as NetBeans, this should work 
+ * If you are using an IDE, such as NetBeans, this should work
  * seamlessly.  If you are compiling and running the examples
  * from the command-line, this may be confusing if you aren't
  * used to using named packages.  In most cases,
@@ -43,32 +42,32 @@
  * http://docs.oracle.com/javase/javatutorials/tutorial/uiswing/start/compile.html#package
  */
 package view;
- 
+
 /*
  * SwingViewImplementation.java requires no other files. 
  * @author iker
  */
 import java.awt.Dimension;
-import javax.swing.*; 
- 
+import javax.swing.*;
+
 public class SwingViewImplementation implements View {
+
     /**
-     * Create the GUI and show it.  For thread safety,
-     * this method should be invoked from the
-     * event-dispatching thread.
+     * Create the GUI and show it. For thread safety, this method should be
+     * invoked from the event-dispatching thread.
      */
 
     @Override
-    public void showGreeting (String greeting){
+    public void showGreeting(String greeting) {
         //Create and set up the window.
         JFrame frame = new JFrame("SwingViewImplementation");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setPreferredSize(new Dimension(400, 300));
- 
-        //Add the ubiquitous "Hello World" label.
+
+        //Add the ubiquitous greeting label.
         JLabel label = new JLabel(greeting);
         frame.getContentPane().add(label);
- 
+
         //Display the window.
         frame.pack();
         frame.setVisible(true);

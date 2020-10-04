@@ -7,19 +7,23 @@ package model;
 
 import java.util.ResourceBundle;
 
-
 /**
+ * Clase que returna el mensaje de un fichero
  *
  * @author Aketza
  */
-
 public class FileModelImplementation implements Model {
+
     private ResourceBundle rb = ResourceBundle.getBundle("config.config");
+
+    /**
+     *
+     * @return el mensaje del fichero config y returna el mensaje
+     */
     @Override
-    public String getGreeting(){
-        String greeting = null;
-        greeting = rb.getString("text");
+    public String getGreeting() {
+        String greeting = rb.getString("text");
         return greeting;
     }
-    
+
 }
