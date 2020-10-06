@@ -45,7 +45,7 @@ package view;
 
 /*
  * SwingViewImplementation.java requires no other files. 
- * @author iker
+ * @author Iker
  */
 import java.awt.Dimension;
 import javax.swing.*;
@@ -56,7 +56,6 @@ public class SwingViewImplementation implements View {
      * Create the GUI and show it. For thread safety, this method should be
      * invoked from the event-dispatching thread.
      */
-
     @Override
     public void showGreeting(String greeting) {
         //Create and set up the window.

@@ -8,15 +8,15 @@ package view;
 import util.Utilidades;
 
 /**
- * Clase para ejecutar la vista a elegir.
+ * Class to execute the view to choose.
  *
- * @author aketza
+ * @author Aketza
  */
 public class ViewFactory {
 
     /**
      *
-     * @return la vista que el usuario elija, en este caso consola o grafica.
+     * @return The view that the user chooses, in this case console or graph.
      */
     public View getView() {
         int type = 0;
@@ -31,7 +31,6 @@ public class ViewFactory {
                     return new JavaFXViewImplementation();
                 default:
                     System.out.println("Introduce un modelo valido.");
-
             }
 
         } while (type != 1 || type != 2);

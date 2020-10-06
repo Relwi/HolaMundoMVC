@@ -9,9 +9,9 @@ import model.Model;
 import view.View;
 
 /**
- * Clase en la que se encarga de ejecutar los metodos de las interfaces.
+ * Class in which it is responsible for executing the methods of the interfaces.
  *
- * @author iker
+ * @author Iker
  */
 public class Controller {
 
@@ -19,7 +19,7 @@ public class Controller {
     private Model model;
 
     /**
-     * Coge las interfaces y se guardan en las variables locales.
+     * It takes the interfaces and they are stored in the local variables.
      *
      * @param view
      * @param model
@@ -30,7 +30,7 @@ public class Controller {
     }
 
     /**
-     * Ejecuta los metodos de las interfaces.
+     * Execute the methods of the interfaces.
      */
     public void run() {
         view.showGreeting(model.getGreeting());

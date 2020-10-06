@@ -17,9 +17,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * Clase que se encarga de recivir el mensaje desde una DB
+ * Class that is responsible for receiving the message from a DB.
  *
- * @author iker
+ * @author Iker
  */
 public class ServerModelImplementation implements Model {
 
@@ -28,7 +28,7 @@ public class ServerModelImplementation implements Model {
     private String getGreetingServer = "SELECT text FROM hola_mundo";
 
     /**
-     * Metodo para abrir la conexion con la DB
+     * Method to open the connection with the DB.
      */
     private void openConnection() {
         try {
@@ -45,7 +45,7 @@ public class ServerModelImplementation implements Model {
     }
 
     /**
-     * Metodo para cerrar la conexion de la DB
+     * Method to close the DB connection
      *
      * @throws SQLException
      */
@@ -54,10 +54,11 @@ public class ServerModelImplementation implements Model {
     }
 
     /**
-     * Se abre la conexion a la DB y mediante una query se coge el valor de la
-     * tabla "text", se guarda en una variable local y returna el mensaje.
+     * The connection to the DB is opened and by means of a query the value of
+     * the table "text" is taken, it is saved in a local variable and the
+     * message is returned.
      *
-     * @return el mensaje.
+     * @return The message.
      */
     @Override
     public String getGreeting() {

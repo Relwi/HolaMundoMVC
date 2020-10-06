@@ -13,15 +13,15 @@ import model.Model;
 
 /**
  *
- * @author iker
+ * @author Iker
  */
 public class Application {
 
     /**
-     * Metodo main, creamos las clases factory del modelo y vista y cogemos los
-     * valores que le hayamos asignado a cada clase, modelo (archivo o DB) y
-     * vista (consola o grafica). Creamos el controlador con las interfaces y
-     * ejecutamos el controller.
+     * Main method, we create the factory classes of the model and view and we
+     * take the values that we have assigned to each class, model (file or DB)
+     * and view (console or graph). We create the controller with the interfaces
+     * and execute the controller.
      *
      * @param args the command line arguments
      */

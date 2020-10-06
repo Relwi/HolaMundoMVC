@@ -8,15 +8,15 @@ package model;
 import util.Utilidades;
 
 /**
- * Clase para ejecutar el modelo a elegir.
+ * Class to run the model to choose.
  *
- * @author aketza
+ * @author Aketza
  */
 public class ModelFactory {
 
     /**
      *
-     * @return el modelo que el usuario elija, en este caso fichero o DB.
+     * @return The model that the user chooses, in this case file or DB.
      */
     public Model getModel() {
         int type = 0;

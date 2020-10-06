@@ -8,7 +8,7 @@ package view;
 /**
  * Contain view methods for being used by a controller.
  *
- * @author aketza
+ * @author Aketza
  */
 public interface View {
 
@@ -18,5 +18,4 @@ public interface View {
      * @param greeting A String containing the greeting to be shown.
      */
     public void showGreeting(String greeting);
-
 }

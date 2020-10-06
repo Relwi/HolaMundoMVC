@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  * 
- * @author iker
+ * @author Iker
  */
 public class ModelImplementation implements Model {
 

@@ -7,7 +7,7 @@ package model;
 
 /**
  *
- * @author iker
+ * @author Iker
  */
 public interface Model {
 

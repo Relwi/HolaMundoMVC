@@ -8,7 +8,7 @@ package model;
 import java.util.ResourceBundle;
 
 /**
- * Clase que returna el mensaje de un fichero
+ * Class that returns the message of a file.
  *
  * @author Aketza
  */
@@ -18,7 +18,7 @@ public class FileModelImplementation implements Model {
 
     /**
      *
-     * @return el mensaje del fichero config y returna el mensaje
+     * @return The message from the config file.
      */
     @Override
     public String getGreeting() {
