@@ -59,7 +59,7 @@ public class SwingViewImplementation implements View {
     @Override
     public void showGreeting(String greeting) {
         //Create and set up the window.
-        JFrame frame = new JFrame("SwingViewImplementation");
+        JFrame frame = new JFrame("GUI");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setPreferredSize(new Dimension(400, 300));
 

@@ -28,7 +28,7 @@ public class ViewFactory {
                 case 1:
                     return new ViewImplementation();
                 case 2:
-                    return new JavaFXViewImplementation();
+                    return new SwingViewImplementation();
                 default:
                     System.out.println("Introduce un modelo valido.");
             }
